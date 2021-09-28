@@ -1,0 +1,41 @@
+package Test;
+
+import java.util.Scanner;
+
+import Learning.Calculator;
+
+public class CalculatorTest {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Enter your choice");
+		System.out.println("MENU: \n 1:Addition\n 2:substraction\n 3:Multiplication\n 4:Division");
+	    int choice	=sc.nextInt();
+	    
+	    
+	    Calculator obj=new Calculator();
+		
+		switch(choice) {
+		
+		case 1: obj.addition();
+		
+		break;
+		
+		case 2:obj.subtraction();
+		break;
+		
+		case 3:obj.multiplication();
+		break;
+		
+		case 4:obj.division();
+		break;
+		
+	
+		}
+		
+		sc.close();
+	}
+
+}
